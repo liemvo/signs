@@ -16,8 +16,8 @@ object Maven {
     }
 
 
-    var group: String = "com.vad"
-    var artifactId: String = "vn-signs"
+    var group: String = "com.github.liemvo"
+    var artifactId: String = "signs"
     var gprBaseUrl = "https://maven.pkg.github.com"
     var gprRepoOwner = "liemvo"
     var gprRepoId = "signs"
