@@ -19,8 +19,8 @@ object Maven {
     var group: String = "com.vad"
     var artifactId: String = "sign"
     var gprBaseUrl = "https://maven.pkg.github.com"
-    var gprRepoOwner = "LiemVo"
-    var gprRepoId = "sign-android"
+    var gprRepoOwner = "liemvo"
+    var gprRepoId = "signs"
 
     var gprUser = if (localProperties.containsKey("user")) {
         localProperties.getProperty("user").trim()
