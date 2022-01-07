@@ -10,8 +10,8 @@ object Maven {
         } catch (ex: FileNotFoundException) {
             setProperty("user", "unspecified")
             setProperty("key", "unspecified")
-            setProperty("build", "-1")
-            setProperty("version", "alpha")
+            setProperty("build", "1")
+            setProperty("version", "0.4")
         }
     }
 
@@ -35,12 +35,12 @@ object Maven {
 
     var build:Int = when {
         localProperties.containsKey("build") -> localProperties.getProperty("build").trim().toInt()
-        else -> -1
+        else -> 1
     }
 
-    var version  = if (System.getenv().containsKey("VERSION")) {
-        System.getenv("VERSION")
-    } else {
+    var version  = if (localProperties.contains("version")) {
         localProperties.getProperty("version").trim()
+    } else {
+        "0.4"
     }
 }

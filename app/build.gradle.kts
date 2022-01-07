@@ -54,7 +54,7 @@ afterEvaluate {
     publishing {
         publications {
             register("JitpackRelease", MavenPublication::class) {
-                config("release", "release", "0", 3)
+                config("release", "release")
             }
         }
     }
