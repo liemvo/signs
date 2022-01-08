@@ -20,5 +20,5 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
--keep class com.vad.signs.domain.** { *; }
+-keep class com.vad.signs.domain.ParserKt { *; }
 -keep class com.vad.signs.domain.models.** { *; }
