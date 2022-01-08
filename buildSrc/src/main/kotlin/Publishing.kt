@@ -11,7 +11,7 @@ object Maven {
             setProperty("user", "unspecified")
             setProperty("key", "unspecified")
             setProperty("build", "1")
-            setProperty("version", "0.4")
+            setProperty("version", "0.5")
         }
     }
 
@@ -41,6 +41,6 @@ object Maven {
     var version  = if (localProperties.contains("version")) {
         localProperties.getProperty("version").trim()
     } else {
-        "0.4"
+        "0.5"
     }
 }

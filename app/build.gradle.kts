@@ -20,7 +20,6 @@ android {
     }
     sourceSets {
         getByName("main").java.srcDir("src/main/kotlin")
-        getByName("test").java.srcDir("src/test/kotlin")
     }
 
 
